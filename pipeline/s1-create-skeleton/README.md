@@ -66,11 +66,15 @@ The goal is to copy the “binaries” where they can be executed as if they wer
 
 `vagrant global-status` 
 
-6- Copy the file into the vagrant **production environment**
+6- Copy the file into the vagrant **production environment** <br>
+vagrant scp <local_path> [vm_name]:<remote_path>  <br>
+vagrant scp [vm_name]:<remote_path> <local_path>  <br>
 
 `vagrant scp ../MavenHelloWorldProject/target/MavenHelloWorldProject-1.0-SNAPSHOT.jar [id_vagrant_environment]:/home/vagrant`
 
-**Note:** replace [id_vagrant_environment] with the actual value.
+**Note:** Replace [id_vagrant_environment] with the actual value. <br>
+for example:<br>
+vagrant scp ../MavenHelloWorldProject/target/MavenHelloWorldProject-1.0-SNAPSHOT.jar 4c988fa:/home/vagrant <br>
 
 7- Get into the **production environment**
 
