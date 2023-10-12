@@ -52,9 +52,9 @@ The goal is to copy the “binaries” where they can be executed as if they wer
 
 `vagrant plugin install vagrant-scp`
 
-**hint:** Open the vagrant file and make sure that IP is in range <br>
+**hint:** Open the vagrant file and make sure that IP is in range addresses from 192.168.56.1 to 192.168.63.254 <br>
 ` config.vm.network "private_network", ip: "192.168.56.11" ` 
-addresses from 192.168.56.1 to 192.168.63.254. <br>
+. <br>
 
 4- Start the vagrant **production environment**
 
